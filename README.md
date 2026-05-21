@@ -389,7 +389,7 @@ Planned improvements for UniShare:
 Add project screenshots here:
 
 ```md
-![Home Page](./screenshots/home.png)
+![Home Page](./screenshots/FulLandingPage.png)
 ![Login Page](./screenshots/login.png)
 ![Dashboard](./screenshots/dashboard.png)
 ![Resources Page](./screenshots/resources.png)
