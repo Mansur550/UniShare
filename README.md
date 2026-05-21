@@ -160,34 +160,7 @@ UniShare is designed with a role-based access system.
 
 ---
 
-## 🧱 Project Architecture
 
-```bash
-UniShare/
-│
-├── client/                     # Next.js frontend
-│   ├── app/                    # App router pages
-│   ├── components/             # Reusable UI components
-│   ├── hooks/                  # Custom React hooks
-│   ├── lib/                    # Utility functions
-│   ├── schemas/                # Zod validation schemas
-│   ├── services/               # Axios API services
-│   └── styles/                 # Global styles
-│
-├── server/                     # NestJS backend
-│   ├── src/
-│   │   ├── auth/               # Authentication module
-│   │   ├── users/              # User/student management module
-│   │   ├── resources/          # Study resource module
-│   │   ├── mail/               # Mailer service
-│   │   ├── common/             # Guards, pipes, filters, decorators
-│   │   ├── database/           # Database configuration
-│   │   └── main.ts             # Application entry point
-│
-└── README.md
-```
-
----
 
 ## 🔐 Authentication Flow
 
@@ -356,90 +329,6 @@ git clone https://github.com/your-username/unishare.git
 cd unishare
 ```
 
----
-
-## 🖥️ Frontend Setup
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-Create a `.env.local` file inside the `client` folder:
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
-```
-
-Frontend will run on:
-
-```bash
-http://localhost:3000
-```
-
----
-
-## 🧠 Backend Setup
-
-```bash
-cd server
-npm install
-npm run start:dev
-```
-
-Create a `.env` file inside the `server` folder:
-
-```env
-PORT=5000
-
-DATABASE_HOST=localhost
-DATABASE_PORT=5432
-DATABASE_USER=postgres
-DATABASE_PASSWORD=your_password
-DATABASE_NAME=unishare
-
-JWT_SECRET=your_jwt_secret
-JWT_EXPIRES_IN=7d
-
-MAIL_HOST=smtp.example.com
-MAIL_PORT=587
-MAIL_USER=your_email
-MAIL_PASS=your_email_password
-```
-
-Backend will run on:
-
-```bash
-http://localhost:5000
-```
-
----
-
-## 🧪 Run the Project Locally
-
-Start backend:
-
-```bash
-cd server
-npm run start:dev
-```
-
-Start frontend:
-
-```bash
-cd client
-npm run dev
-```
-
-Open the application:
-
-```bash
-http://localhost:3000
-```
-
----
-
 ## 🧼 Clean Architecture Practices
 
 This project follows clean and maintainable architecture principles:
@@ -506,17 +395,7 @@ Add project screenshots here:
 ![Resources Page](./screenshots/resources.png)
 ```
 
----
 
-## 👨‍💻 Author
-
-Built by **Your Name**
-
-- GitHub: [your-github-link]
-- LinkedIn: [your-linkedin-link]
-- Portfolio: [your-portfolio-link]
-
----
 
 ## 🏷️ Tags
 
