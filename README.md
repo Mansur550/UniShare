@@ -302,8 +302,8 @@ Add project screenshots here:
 
 
 ![Home Page](./screenshots/FulLandingPage.png)
-![Login Page](./screenshots/Why.png)
-![Dashboard](./screenshots/Resoutce.png)
+![Why UniShare](./screenshots/Why.png)
+![Resources](./screenshots/Resoutce.png)
 
 ## 🏷️ Tags
 
