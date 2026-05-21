@@ -194,75 +194,8 @@ Main database tables may include:
 - `bookmarks`
 - `ratings`
 - `reviews`
-- `downloads`
-
-Example resource fields:
-
-```ts
-id
-title
-description
-category
-semester
-type
-fileUrl
-downloadCount
-rating
-createdAt
-updatedAt
-```
-
----
-
-## 📡 REST API Overview
-
-### Auth APIs
-
-```http
-POST /auth/register
-POST /auth/login
-POST /auth/logout
-GET /auth/profile
-```
-
-### Student APIs
-
-```http
-GET /students
-GET /students/:id
-PATCH /students/:id
-DELETE /students/:id
-```
-
-### Resource APIs
-
-```http
-POST /resources
-GET /resources
-GET /resources/:id
-PATCH /resources/:id
-DELETE /resources/:id
-```
-
-### Resource Interaction APIs
-
-```http
-POST /resources/:id/download
-POST /resources/:id/bookmark
-POST /resources/:id/rate
-POST /resources/:id/review
-```
-
-### Moderator/Admin APIs
-
-```http
-PATCH /resources/:id/approve
-PATCH /resources/:id/reject
-GET /admin/users
-DELETE /admin/users/:id
-```
-
----
+- `downloads
+----
 
 ## ✅ Validation Strategy
 
@@ -289,18 +222,6 @@ UniShare uses validation on both frontend and backend.
 
 The backend uses NestJS HTTP Exceptions to return meaningful and consistent API responses.
 
-Example:
-
-```ts
-throw new NotFoundException('Resource not found');
-throw new UnauthorizedException('You are not authorized');
-throw new BadRequestException('Invalid input data');
-```
-
-This makes the API easier to debug, test, and maintain.
-
----
-
 ## 📮 API Testing
 
 All major REST API endpoints were tested and documented using **Postman**.
@@ -319,15 +240,6 @@ Tested features include:
 - Authorization errors
 
 ---
-
-## ⚙️ Installation & Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/unishare.git
-cd unishare
-```
 
 ## 🧼 Clean Architecture Practices
 
@@ -390,12 +302,8 @@ Add project screenshots here:
 
 
 ![Home Page](./screenshots/FulLandingPage.png)
-![Login Page](./screenshots/login.png)
-![Dashboard](./screenshots/dashboard.png)
-![Resources Page](./screenshots/resources.png)
-
-
-
+![Login Page](./screenshots/Why.png)
+![Dashboard](./screenshots/Resoutce.png)
 
 ## 🏷️ Tags
 
